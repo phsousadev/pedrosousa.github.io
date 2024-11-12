@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site em Construção</title>
+  <style>
+    /* Paleta de Cores */
+    :root {
+      --color-primary: #333333b0;
+      --color-primary-dark: #333;
+      --color-accent: rgb(157, 255, 0);
+      --color-background: #f8f9fa;
+      --color-text: #333;
+      --color-text-secondary: #6c757d;
+    }
+
+    /* Estilos Gerais */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: linear-gradient(45deg, #f8f9fa, #e9ecef);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 10s ease infinite;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Estilo da Mensagem */
+    .message {
+      text-align: center;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 90%;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .message h1 {
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .message p {
+      color: var(--color-text-secondary);
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .message .progress-bar {
+      background-color: var(--color-accent);
+      height: 8px;
+      border-radius: 4px;
+      width: 0%;
+      animation: progress 4s ease-in-out infinite;
+      box-shadow: 0 2px 6px rgba(157, 255, 0, 0.5);
+    }
+
+    @keyframes progress {
+      0% {
+        width: 0%;
+      }
+      50% {
+        width: 100%;
+      }
+      100% {
+        width: 0%;
+      }
+    }
+
+    .message .btn {
+      display: inline-block;
+      background-color: var(--color-accent);
+      color: var(--color-primary-dark);
+      text-decoration: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 2.5rem;
+    }
+
+    .message .btn:hover {
+      background-color: #83e300;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="message">
+    <h1>Ainda estou trabalhando nisso, desculpe ...</h1>
+    <div class="progress-bar"></div>
+    <a href="../index.html" class="btn">Voltar</a>
+  </div>
+</body>
+</html>
